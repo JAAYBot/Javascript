@@ -2,25 +2,24 @@
  * @param {number} n
  * @return {string[]}
  */
- var generateParenthesis = function(n) {
+var generateParenthesis = function (n) {
     const result = [];
-    bfs("", 0, 0);
+    dfs("", 0, 0);
     return result;
-        
-    function bfs(str, left, right){       
-        if(left === n && right === n){
+
+    function dfs(str, left, right) {
+        if (left === n && right === n) {
             result.push(str);
             return;
         }
-        
-        if(left !== n){
-           bfs(str+'(', left+1, right)
-         }
-           
-         
-        if(left > right){
-           bfs(str+')', left, right+1)
-         }
- 
+
+        if (left !== n) {
+            dfs(str + '(', left + 1, right)
+        }
+
+        if (left > right) {
+            dfs(str + ')', left, right + 1)
+        }
+
     }
 };
