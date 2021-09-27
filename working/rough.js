@@ -14,3 +14,5 @@ console.log(parseInt(t.toString(2), 2));
 */
 let temp = "hello"
 //console.log(temp.split("").reverse().join(""))
+
+
