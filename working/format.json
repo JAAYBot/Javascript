@@ -1,0 +1,24 @@
+{
+    "args": {},
+    "data": {
+        "title": "foo",
+        "body": "bar",
+        "userId": 1
+    },
+    "files": {},
+    "form": {},
+    "headers": {
+        "x-forwarded-proto": "http",
+        "x-forwarded-port": "80",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-615cb634-5c63aee8308c160d74da2927",
+        "content-length": "39",
+        "content-type": "application/json"
+    },
+    "json": {
+        "title": "foo",
+        "body": "bar",
+        "userId": 1
+    },
+    "url": "http://postman-echo.com/post"
+}
